@@ -1,13 +1,13 @@
-// function hello() {
-//     console.log("Hello");
-// }
+function hello() {
+    console.log("Hello");
+}
 
 // hello();
 
 
-// function sum(firstNumber, secondNumber) {
-//     console.log(firstNumber + secondNumber);
-// }
+function sum(firstNumber, secondNumber) {
+    console.log(firstNumber + secondNumber);
+}
 // sum(1, 3);
 
 // ----------   data return   ----------- 
@@ -38,5 +38,15 @@
 
 // or 
 
-let hello = () => console.log("Hello");
-hello();
+// let hello = () => console.log("Hello");
+// hello();
+
+// --------------------------------------
+
+const greeting = yourName => {
+    const result = `Hello ${yourName}`;
+    console.log(result);
+}
+
+const name = prompt('What is your name?');
+greeting(name);
